@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-foreground: #ffffff;
+  --color-accent: #bc13fe;
+  --color-accent-secondary: #00f0ff;
+  --color-accent-tertiary: #ccff00;
+
+  --font-serif: "Syne", serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --accent: #bc13fe;
+  --accent-secondary: #00f0ff;
+  --accent-tertiary: #ccff00;
+  --border: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  cursor: none;
+  /* We will implement a custom glow cursor */
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Neo-Brutalist Utilities */
+.brutalist-card {
+  background: var(--background);
+  border: 2px solid var(--foreground);
+  box-shadow: 4px 4px 0px var(--foreground);
+  transition: all 0.2s ease;
+}
+
+.brutalist-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px var(--accent);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
+}
+
+.noise-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  z-index: 9999;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
