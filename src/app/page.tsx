@@ -1,6 +1,8 @@
 import Link from "next/link";
 import SocialLinks from "@/components/SocialLinks";
 import ThemeToggle from "@/components/ThemeToggle";
+import React from "react";
+import { Router } from "lucide-react";
 
 export default function Home() {
   const skills = [
@@ -9,11 +11,13 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Employee Management System",
-      desc: "Role-based dashboards - CRUD operations with backend integration.",
-      tech: ["Next.js", "Node", "MongoDB"],
+      title: "AI Resume Analyzer",
+      desc: `AI Resume Analyzer is an intelligent tool built using modern web technologies. 
+      It utilizes React, Node.js, and MongoDB to provide seamless authentication, resume uploading, 
+      and analyzes candidates against job descriptions using smart AI evaluations.`,
+      tech: ["React, React Router, Puter.js, Tailwind CSS, Zustand"],
       live: "#",
-      github: "#",
+      github: "https://github.com/ankur0704/ai-resume-analyzer",
     },
     {
       title: "Chat Application",
@@ -23,11 +27,13 @@ export default function Home() {
       github: "https://github.com/ankur0704/chatapp.git",
     },
     {
-      title: "AI Nutrition Recommender",
-      desc: "Personalized diet recommendations using AI logic and meal planning",
-      tech: ["AI/ML", "Python"],
+      title: "Chat App",
+      desc: `Built a scalable real-time chat app (MERN stack + WebSockets) supporting secure user auth and instant
+             messaging for 100+ concurrent users. It supports user authentication, secure messaging, and instant
+             communication powered by WebSockets.`,
+      tech: ["React, TailwindCSS, Vite, TypeScript, Node.js + Express.js, MongoDB, JWT, Socket.IO."],
       live: "#",
-      github: "#",
+      github: "https://github.com/ankur0704/chatapp",
     },
   ];
 
@@ -148,7 +154,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="text-center text-muted text-sm py-8 border-t border-border">
-        <p>© {new Date().getFullYear()} Ankur Sonavane • Built with Next.js</p>
+        <p>© {new Date().getFullYear()} Ankur Sonavane | All rights reserved</p>
       </footer>
     </main>
   );
