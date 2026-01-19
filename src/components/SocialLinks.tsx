@@ -11,27 +11,27 @@ const socials = [
     {
         name: "X (Twitter)",
         icon: FaXTwitter,
-        href: "https://x.com/", // User to update
+        href: "https://x.com/Ankur77s",
     },
     {
         name: "Instagram",
         icon: FaInstagram,
-        href: "https://instagram.com/", // User to update
+        href: "https://instagram.com/ankur_0704",
     },
     {
         name: "LinkedIn",
         icon: FaLinkedin,
-        href: "https://linkedin.com/", // User to update
+        href: "https://www.linkedin.com/in/ankur-sonavane/",
     },
     {
         name: "GitHub",
         icon: FaGithub,
-        href: "https://github.com/", // User to update
+        href: "https://github.com/ankur0704",
     },
     {
         name: "Email",
         icon: FaEnvelope,
-        href: "mailto:ankur@email.com", // User to update
+        href: "mailto:sonavaneankur@email.com",
     },
 ];
 

@@ -46,9 +46,8 @@ export default function Home() {
           <ThemeToggle />
         </div>
         {/* Profile Placeholder/Image */}
-        <div className="w-32 h-32 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center mb-8 overflow-hidden">
-          {/* <img src="/your-photo.jpg" alt="Ankur Sonavane" className="w-full h-full object-cover" /> */}
-          <span className="text-2xl font-semibold text-gray-400">AS</span>
+        <div className="w-32 h-32 square bg-gray-800 border border-gray-700 flex items-center justify-center mb-8 overflow-hidden">
+          <img src="/logo.jpg" alt="Ankur Sonavane" className="w-full h-full object-cover" />
         </div>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground tracking-tight">
@@ -84,9 +83,10 @@ export default function Home() {
         <p className="text-muted leading-relaxed text-lg">
           I'm Ankur Sonavane, a Computer Engineering student passionate about
           building full-stack web applications and exploring AI projects.
+          Open to work and upscale.
         </p>
         <div className="flex justify-center flex-wrap gap-2 mt-6">
-          {["React", "Node.js", "Next.js", "TypeScript", "MongoDB", "Docker"].map((tech) => (
+          {["React", "Node.js", "Next.js", "TypeScript", "MongoDB", "Docker", "Tailwind CSS", "Zustand"].map((tech) => (
             <span key={tech} className="px-3 py-1 bg-muted/10 border border-border rounded-md text-xs text-muted">
               {tech}
             </span>
