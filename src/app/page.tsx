@@ -1,13 +1,12 @@
 import Link from "next/link";
 import SocialLinks from "@/components/SocialLinks";
 import ThemeToggle from "@/components/ThemeToggle";
+import Skills from "@/components/Skills";
 import React from "react";
 import { Router } from "lucide-react";
 
 export default function Home() {
-  const skills = [
-    "React", "Node.js", "Next.js", "TypeScript", "MongoDB", "Docker"
-  ];
+
 
   const projects = [
     {
@@ -50,7 +49,7 @@ export default function Home() {
           <img src="/logo.jpg" alt="Ankur Sonavane" className="w-full h-full object-cover" />
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground tracking-tight">
+        <h1 className="text-4xl md:text-5xl mb-4 ">
           Ankur Sonavane
         </h1>
         <p className="text-muted text-lg mb-8 max-w-lg mx-auto">
@@ -75,7 +74,7 @@ export default function Home() {
         <SocialLinks />
       </section>
 
-      <div className="w-full max-w-2xl mx-auto border-t border-border my-8"></div>
+      <div className="w-full max-w-2xl mx-auto border-t border-border my-4"></div>
 
       {/* ABOUT SECTION */}
       <section id="about" className="max-w-2xl mx-auto px-6 py-12 text-center">
@@ -85,31 +84,18 @@ export default function Home() {
           building full-stack web applications and exploring AI projects.
           Open to work and upscale.
         </p>
-        <div className="flex justify-center flex-wrap gap-2 mt-6">
-          {["React", "Node.js", "Next.js", "TypeScript", "MongoDB", "Docker", "Tailwind CSS", "Zustand"].map((tech) => (
-            <span key={tech} className="px-3 py-1 bg-muted/10 border border-border rounded-md text-xs text-muted">
-              {tech}
-            </span>
-          ))}
-        </div>
+
       </section>
 
-      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-8"></div>
+      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-4"></div>
 
       {/* SKILLS SECTION */}
-      <section id="skills" className="max-w-3xl mx-auto px-6 py-12 text-center">
-        <h2 className="text-2xl font-bold text-foreground mb-8">Skills</h2>
-        <div className="flex flex-wrap justify-center gap-6 items-center text-lg text-muted font-medium">
-          <span>React</span> <span className="text-muted/50">•</span>
-          <span>Node.js</span> <span className="text-gray-700">•</span>
-          <span>Next.js</span> <span className="text-gray-700">•</span>
-          <span>TypeScript</span> <span className="text-gray-700">•</span>
-          <span>MongoDB</span> <span className="text-gray-700">•</span>
-          <span>Docker</span>
-        </div>
+      <section id="sklls" className="max-w-4xl mx-auto px-6 py-12 text-center">
+        <h2 className="text-2xl font-bold text-foreground mb-12">Skills</h2>
+        <Skills />
       </section>
 
-      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-8"></div>
+      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-4"></div>
 
       {/* PROJECTS SECTION */}
       <section id="projects" className="max-w-2xl mx-auto px-6 py-12">
@@ -138,14 +124,14 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-8"></div>
+      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-4"></div>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="max-w-2xl mx-auto px-6 py-20 text-center">
+      <section id="contact" className="max-w-2xl mx-auto px-6 py-10 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-4">Contact</h2>
         <p className="text-muted mb-8">Let's build something together.</p>
         <a
-          href="mailto:ankur@email.com"
+          href="mailto:sonavaneankur@gmail.com"
           className="px-6 py-3 border border-border bg-background/50 text-foreground font-medium rounded-lg hover:bg-muted/10 transition-colors"
         >
           Email Me
