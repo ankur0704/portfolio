@@ -64,7 +64,7 @@ export default function Home() {
             View Projects
           </Link>
           <a
-            href="/resume.pdf"
+            href="/Ankur_Anil_Sonavane_resume_og.pdf"
             className="px-6 py-2.5 border border-border bg-background/50 text-foreground text-sm font-medium rounded-lg hover:bg-muted/10 transition-colors"
           >
             Download Resume
