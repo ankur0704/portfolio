@@ -19,11 +19,11 @@ export default function Home() {
       github: "https://github.com/ankur0704/ai-resume-analyzer",
     },
     {
-      title: "Chat Application",
-      desc: "Real-time chat app wi Docker setup and scalable backend",
-      tech: ["TypeScript", "WebSockets", "Docker"],
-      live: "#",
-      github: "https://github.com/ankur0704/chatapp.git",
+      title: "Nike E-Commerce V2",
+      desc: "A modern, full-stack e-commerce application built with Next.js 15, Postgres (Neon), Drizzle ORM, and Tailwind CSS.",
+      tech: ["Drizzle ORM, PostgreSQL (Neon), Next.js, TypeScript, Taiwlind CSS, Zustand, Lucid React"],
+      live: "https://nike-ecom-v2-guc5.vercel.app/",
+      github: "https://github.com/ankur0704/nike-ecom-v2",
     },
     {
       title: "Chat App",
