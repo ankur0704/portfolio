@@ -74,7 +74,7 @@ export default function Home() {
         <SocialLinks />
       </section>
 
-      <div className="w-full max-w-2xl mx-auto border-t border-border my-4"></div>
+      <div className="w-full max-w-2xl mx-auto border-t border-white my-4"></div>
 
       {/* ABOUT SECTION */}
       <section id="about" className="max-w-2xl mx-auto px-6 py-12 text-center">
@@ -87,7 +87,7 @@ export default function Home() {
 
       </section>
 
-      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-4"></div>
+      <div className="w-full max-w-2xl mx-auto border-t border-white my-4"></div>
 
       {/* SKILLS SECTION */}
       <section id="sklls" className="max-w-4xl mx-auto px-6 py-12 text-center">
@@ -95,7 +95,7 @@ export default function Home() {
         <Skills />
       </section>
 
-      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-4"></div>
+      <div className="w-full max-w-2xl mx-auto border-t border-white my-4"></div>
 
       {/* PROJECTS SECTION */}
       <section id="projects" className="max-w-2xl mx-auto px-6 py-12">
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="w-full max-w-2xl mx-auto border-t border-gray-900 my-4"></div>
+      <div className="w-full max-w-2xl mx-auto border-t border-white my-4"></div>
 
       {/* CONTACT SECTION */}
       <section id="contact" className="max-w-2xl mx-auto px-6 py-10 text-center">
